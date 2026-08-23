@@ -1,4 +1,0 @@
-[32mINFO    [0m TestLogin:test_login.py:34 Начало теста: Авторизация с неверным паролем
-[32mINFO    [0m BasePage:base_page.py:16 Переход на страницу https://archiscope.ru/login
-[32mINFO    [0m BasePage:base_page.py:21 Страница загружена: https://archiscope.ru/login
-[32mINFO    [0m TestLogin:test_login.py:41 Тест завершен успешно

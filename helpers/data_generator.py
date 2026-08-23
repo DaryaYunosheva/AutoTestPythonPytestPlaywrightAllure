@@ -1,5 +1,5 @@
 from faker import Faker
-from pygments.lexers import email
+
 
 fake = Faker('ru_RU')
 
@@ -7,7 +7,7 @@ def generate_user():
     return {
         'first_name': fake.first_name(),
         'last_name': fake.last_name(),
-        'email': fake.email(),
+        'email': f"auto_{fake.uuid4()[:8]}@example.com",
         'phone': fake.phone_number(),
         'password': fake.password(length=12)
     }
@@ -22,3 +22,6 @@ def generate_news():
 
 def generate_comment():
     return fake.sentence(nb_words=10)
+
+def generate_email():
+    return f"new_{fake.uuid4()[:8]}@example.com"

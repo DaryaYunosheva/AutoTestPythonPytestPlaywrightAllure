@@ -1,4 +1,4 @@
-from playwright.sync_api import expect
+from playwright.sync_api import expect, Locator
 
 from pages.base_page import BasePage
 
@@ -38,3 +38,18 @@ class NewsListPage(BasePage):
 
     def get_current_page(self):
         return int(self.page.locator("button.join-item.btn.btn-primary").inner_text())
+
+    def get_cards(self):
+        return self.page.locator(".card")
+
+    def get_card_title(self, card: Locator):
+        return card.locator("h2.card-title a").inner_text()
+
+    def get_card_subtitle(self, card: Locator):
+        return card.locator("h2.card-title + p").inner_text()
+
+    def get_card_text(self, card: Locator):
+        return card.locator("h2.card-title + p + p").inner_text()
+
+    def get_card_tags(self, card: Locator):
+        return card.locator(".badge").all_inner_texts()

@@ -1,4 +1,4 @@
-
+import pytest
 import logging
 import allure
 from playwright.sync_api import Page, expect
@@ -15,7 +15,8 @@ class TestAuthFlow:
     @allure.story("Полный цикл регистрации и авторизации")
     @allure.severity(allure.severity_level.CRITICAL)
     @allure.description("Проверка полного цикла: регистрации нового пользователя, редирект на страницу входа и успешная авторизация")
-    def test_full_cicle_auth(self, page: Page):
+    @pytest.mark.positive
+    def test_full_cycle_auth(self, page: Page):
         logger.info("Начало теста: Полный цикл авторизации")
 
         user_data = generate_user()

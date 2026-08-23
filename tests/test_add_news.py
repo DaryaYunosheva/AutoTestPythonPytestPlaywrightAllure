@@ -2,7 +2,7 @@ import logging
 import allure
 import pytest
 from playwright.sync_api import Page, expect
-from helpers.data_for_tests import user1
+from helpers.data_for_tests import user2
 from helpers.data_generator import generate_news
 from pages.add_news_page import AddNewsPage
 
@@ -16,7 +16,7 @@ class TestAddNews:
     @allure.severity(allure.severity_level.CRITICAL)
     @allure.description("Проверка, что пользователь может создать новость, заполнив все поля")
     @pytest.mark.positive
-    def test_add_news_success(self, auth_page):
+    def test_add_news_success(self, auth_page, new_user):
         logger.info("Начало теста: Создание новости")
         add_new_page = AddNewsPage(auth_page)
         add_new_page.open()
@@ -35,8 +35,8 @@ class TestAddNews:
             expect(card).to_be_visible()
             expect(card).to_contain_text(new_data["subtitle"][:10])
             expect(card).to_contain_text(new_data["text"][:10])
-            expect(card).to_contain_text(user1.first_name)
-            expect(card).to_contain_text(user1.last_name)
+            expect(card).to_contain_text(new_user.first_name)
+            expect(card).to_contain_text(new_user.last_name)
         logger.info("Тест завершен успешно")
 
 
@@ -71,8 +71,7 @@ class TestAddNews:
         with allure.step("Создание статьи"):
             add_new_page.create_new("       ", new_data["subtitle"], new_data["text"], new_data["tags"])
         with allure.step("Проверка, что пользователь остался на странице создания"):
-            button = add_new_page.page.get_by_role("button", name="Создать")
-            expect(button).to_be_visible(timeout=10000)
+            expect(add_new_page.get_create_button()).to_be_visible(timeout=10000)
             expect(add_new_page.page).to_have_url(f"{add_new_page.base_url}/news/create", timeout=30000)
         logger.info("Тест завершен успешно")
 
@@ -108,7 +107,6 @@ class TestAddNews:
         with allure.step("Создание статьи"):
             add_new_page.create_new(new_data["title"], new_data["subtitle"], "      ", new_data["tags"])
         with allure.step("Проверка, что пользователь остался на странице создания"):
-            button = add_new_page.page.get_by_role("button", name="Создать")
-            expect(button).to_be_visible(timeout=10000)
+            expect(add_new_page.get_create_button()).to_be_visible(timeout=10000)
             expect(add_new_page.page).to_have_url(f"{add_new_page.base_url}/news/create", timeout=30000)
         logger.info("Тест завершен успешно")

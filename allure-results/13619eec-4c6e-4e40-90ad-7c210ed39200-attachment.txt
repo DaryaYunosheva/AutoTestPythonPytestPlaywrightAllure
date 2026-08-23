@@ -1,4 +1,0 @@
-[32mINFO    [0m TestNewsList:test_news_list.py:86 Начало теста: Переход на страницу по номеру
-[32mINFO    [0m BasePage:base_page.py:16 Переход на страницу https://archiscope.ru/
-[32mINFO    [0m BasePage:base_page.py:21 Страница загружена: https://archiscope.ru/
-[32mINFO    [0m TestNewsList:test_news_list.py:118 Тест завершен успешно

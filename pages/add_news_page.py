@@ -18,3 +18,5 @@ class AddNewsPage(BasePage):
     def get_news_card(self, title):
         return self.page.locator(".card").filter(has_text=title)
 
+    def get_create_button(self):
+        return self.page.get_by_role("button", name="Создать")

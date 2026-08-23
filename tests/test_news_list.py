@@ -30,8 +30,25 @@ class TestNewsList:
         news_list = NewsListPage(page)
         news_list.open()
         page.wait_for_selector(".card", timeout=10000)
-        news_list.search("Банк")
-        page.wait_for_timeout(5000)
+        word = "Банк"
+        with allure.step("Поиск новостей по заданному слову"):
+            news_list.search(word)
+            page.wait_for_timeout(5000)
+            cards = news_list.get_cards()
+        expect(cards.first).to_be_visible()
+        count = cards.count()
+        with allure.step("Проверка наличия слова в статье"):
+            for i in range(count):
+                card = cards.nth(i)
+
+                title = news_list.get_card_title(card)
+                subtitle = news_list.get_card_subtitle(card)
+                text = news_list.get_card_text(card)
+                tags = news_list.get_card_tags(card)
+
+                card_content = " ".join([title, subtitle, text, *tags]).lower()
+                assert word.lower() in card_content
+
         logger.info("Тест завершен успешно")
 
     @allure.story("Пагинация")

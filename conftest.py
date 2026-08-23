@@ -1,11 +1,15 @@
+import re
+
 import pytest
 import logging
 import allure
 from playwright.sync_api import Browser, BrowserContext, Page, expect
 from pathlib import Path
-from helpers.data_for_tests import user2
+from helpers.data_for_tests import user2, User
 from pages.login_page import LoginPage
 from pages.profile_page import ProfilePage
+from helpers.data_generator import generate_user
+from pages.register_page import RegisterPage
 
 BASE_URL = ''
 ARTIFACTS_DIR = Path("artifacts")
@@ -43,14 +47,14 @@ def context(browser: Browser, request):
     if context._test_failed:
         trace_path = TRACES_DIR / f"{test_name}.zip"
         context.tracing.stop(path=str(trace_path))
-        allure.attach.file(str(trace_path), "Playwright trace", attachment_type="application/zip")
+        allure.attach.file(str(trace_path), "Playwright trace", attachment_type=allure.attachment_type.ZIP)
         logger.info(f"Результат теста {test_name} сохранен")
     else:
         context.tracing.stop()
 
     video_path = VIDEOS_DIR / f"{test_name}.webm"
     if context._test_failed and video_path.exists():
-        allure.attach.file(str(video_path), "Video", attachment_type="video/webm")
+        allure.attach.file(str(video_path), "Video", attachment_type=allure.attachment_type.WEBM)
     elif video_path.exists():
         video_path.unlink()
 
@@ -69,7 +73,7 @@ def page(context: BrowserContext, request):
         context._test_failed = True
         screenshot_path = SCREENSHOTS_DIR / f"{request.node.name}.png"
         page.screenshot(path=str(screenshot_path), full_page=True)
-        allure.attach.file(str(screenshot_path), "Screenshot", attachment_type="image/png")
+        allure.attach.file(str(screenshot_path), "Screenshot", attachment_type=allure.attachment_type.PNG)
         logger.info(f"Скриншот сохранен: {screenshot_path}")
     page.close()
 
@@ -91,23 +95,22 @@ def allure_setup(request):
 
 
 @pytest.fixture(scope="function")
-def auth_page(page: Page):
+def new_user(page: Page):
+    user = User(**generate_user())
+    RegisterPage(page).open().register( user.first_name, user.last_name, user.email, user.phone, user.password)
+    expect(page, "Неудачная попытка регистрации пользователя").to_have_url(re.compile(".*/login"))
+
+    logger.info(f"Зарегистрирован пользователь {user.email}")
+    return user
+
+@pytest.fixture(scope="function")
+def auth_page(page: Page, new_user: User):
     login_page = LoginPage(page)
     login_page.open()
-    login_page.login(user2.email, user2.password)
-    expect(page).to_have_url("https://archiscope.ru/")
+    login_page.login(new_user.email, new_user.password)
+    expect(page.get_by_role("link", name="Добавить новость")).to_be_visible()
     return page
 
 @pytest.fixture
 def profile_page(auth_page):
-    profile_page = ProfilePage(auth_page)
-    profile_page.open()
-
-    yield profile_page
-
-    profile_page.update_profile(
-        firstname=user2.first_name,
-        lastname=user2.last_name,
-        email=user2.email,
-        phone=user2.phone
-    )
+    return(ProfilePage(auth_page).open())

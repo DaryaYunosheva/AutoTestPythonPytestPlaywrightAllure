@@ -1,7 +1,0 @@
-[32mINFO    [0m BasePage:base_page.py:16 Переход на страницу https://archiscope.ru/login
-[32mINFO    [0m BasePage:base_page.py:21 Страница загружена: https://archiscope.ru/login
-[32mINFO    [0m News:test_add_news.py:48 Начало теста: Создание новости с пустым заголовком
-[32mINFO    [0m BasePage:base_page.py:16 Переход на страницу https://archiscope.ru/news/create
-[32mINFO    [0m BasePage:base_page.py:21 Страница загружена: https://archiscope.ru/news/create
-[35mDEBUG   [0m root:test_add_news.py:52 Сгенерирована новая статья
-[32mINFO    [0m News:test_add_news.py:57 Тест завершен успешно
