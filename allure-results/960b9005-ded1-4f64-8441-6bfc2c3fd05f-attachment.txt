@@ -1,0 +1,4 @@
+[32mINFO    [0m TestRegister:test_register.py:39 Начало теста: Регистрация нового пользователя
+[32mINFO    [0m BasePage:base_page.py:16 Переход на страницу https://archiscope.ru/register
+[32mINFO    [0m BasePage:base_page.py:21 Страница загружена: https://archiscope.ru/register
+[32mINFO    [0m TestRegister:test_register.py:50 Тест завершен успешно

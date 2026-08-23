@@ -1,0 +1,240 @@
+13:26:30 [DEBUG] faker.factory: Looking for locale `ru_RU` in provider `faker.providers.address`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.address` has been localized to `ru_RU`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `ru_RU` in provider `faker.providers.automotive`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.automotive` has been localized to `ru_RU`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `ru_RU` in provider `faker.providers.bank`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.bank` has been localized to `ru_RU`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `ru_RU` in provider `faker.providers.barcode`.
+13:26:30 [DEBUG] faker.factory: Specified locale `ru_RU` is not available for provider `faker.providers.barcode`. Locale reset to `en_US` for this provider.
+13:26:30 [DEBUG] faker.factory: Looking for locale `ru_RU` in provider `faker.providers.color`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.color` has been localized to `ru_RU`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `ru_RU` in provider `faker.providers.company`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.company` has been localized to `ru_RU`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `ru_RU` in provider `faker.providers.credit_card`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.credit_card` has been localized to `ru_RU`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `ru_RU` in provider `faker.providers.currency`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.currency` has been localized to `ru_RU`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `ru_RU` in provider `faker.providers.date_time`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.date_time` has been localized to `ru_RU`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.doi` does not feature localization. Specified locale `ru_RU` is not used for this provider.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.emoji` does not feature localization. Specified locale `ru_RU` is not used for this provider.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.file` does not feature localization. Specified locale `ru_RU` is not used for this provider.
+13:26:30 [DEBUG] faker.factory: Looking for locale `ru_RU` in provider `faker.providers.geo`.
+13:26:30 [DEBUG] faker.factory: Specified locale `ru_RU` is not available for provider `faker.providers.geo`. Locale reset to `en_US` for this provider.
+13:26:30 [DEBUG] faker.factory: Looking for locale `ru_RU` in provider `faker.providers.internet`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.internet` has been localized to `ru_RU`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `ru_RU` in provider `faker.providers.isbn`.
+13:26:30 [DEBUG] faker.factory: Specified locale `ru_RU` is not available for provider `faker.providers.isbn`. Locale reset to `en_US` for this provider.
+13:26:30 [DEBUG] faker.factory: Looking for locale `ru_RU` in provider `faker.providers.job`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.job` has been localized to `ru_RU`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `ru_RU` in provider `faker.providers.lorem`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.lorem` has been localized to `ru_RU`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `ru_RU` in provider `faker.providers.misc`.
+13:26:30 [DEBUG] faker.factory: Specified locale `ru_RU` is not available for provider `faker.providers.misc`. Locale reset to `en_US` for this provider.
+13:26:30 [DEBUG] faker.factory: Looking for locale `ru_RU` in provider `faker.providers.passport`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.passport` has been localized to `ru_RU`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `ru_RU` in provider `faker.providers.person`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.person` has been localized to `ru_RU`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `ru_RU` in provider `faker.providers.phone_number`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.phone_number` has been localized to `ru_RU`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.profile` does not feature localization. Specified locale `ru_RU` is not used for this provider.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.python` does not feature localization. Specified locale `ru_RU` is not used for this provider.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.sbn` does not feature localization. Specified locale `ru_RU` is not used for this provider.
+13:26:30 [DEBUG] faker.factory: Looking for locale `ru_RU` in provider `faker.providers.ssn`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.ssn` has been localized to `ru_RU`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.user_agent` does not feature localization. Specified locale `ru_RU` is not used for this provider.
+13:26:30 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.address`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.address` has been localized to `en_US`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.automotive`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.automotive` has been localized to `en_US`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.bank`.
+13:26:30 [DEBUG] faker.factory: Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+13:26:30 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.barcode`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.barcode` has been localized to `en_US`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.color`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.color` has been localized to `en_US`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.company`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.company` has been localized to `en_US`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.credit_card`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.credit_card` has been localized to `en_US`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.currency`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.currency` has been localized to `en_US`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.date_time`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.date_time` has been localized to `en_US`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.doi` does not feature localization. Specified locale `en_US` is not used for this provider.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not used for this provider.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not used for this provider.
+13:26:30 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.geo`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.geo` has been localized to `en_US`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.internet`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.internet` has been localized to `en_US`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.isbn`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.isbn` has been localized to `en_US`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.job`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.job` has been localized to `en_US`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.lorem`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.lorem` has been localized to `en_US`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.misc`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.misc` has been localized to `en_US`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.passport`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.passport` has been localized to `en_US`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.person`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.person` has been localized to `en_US`.
+13:26:30 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.phone_number`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.phone_number` has been localized to `en_US`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not used for this provider.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not used for this provider.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not used for this provider.
+13:26:30 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.ssn`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.ssn` has been localized to `en_US`.
+13:26:30 [DEBUG] faker.factory: Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not used for this provider.
+13:26:30 [DEBUG] asyncio: Using proactor: IocpProactor
+13:26:31 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
+13:26:32 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
+13:26:32 [INFO] News: Начало теста: Создание новости
+13:26:32 [INFO] BasePage: Переход на страницу https://archiscope.ru/news/create
+13:26:33 [INFO] BasePage: Страница загружена: https://archiscope.ru/news/create
+13:26:33 [DEBUG] root: Сгенерирована новая статья
+13:26:34 [INFO] News: Тест завершен успешно
+13:26:34 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
+13:26:35 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
+13:26:35 [INFO] News: Начало теста: Создание новости с пустым заголовком
+13:26:35 [INFO] BasePage: Переход на страницу https://archiscope.ru/news/create
+13:26:36 [INFO] BasePage: Страница загружена: https://archiscope.ru/news/create
+13:26:36 [DEBUG] root: Сгенерирована новая статья
+13:26:36 [INFO] News: Тест завершен успешно
+13:26:36 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
+13:26:37 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
+13:26:38 [INFO] News: Начало теста: Создание новости с заголовком из пробелов
+13:26:38 [INFO] BasePage: Переход на страницу https://archiscope.ru/news/create
+13:26:39 [INFO] BasePage: Страница загружена: https://archiscope.ru/news/create
+13:26:39 [DEBUG] root: Сгенерирована новая статья
+13:26:49 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
+13:26:50 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
+13:26:51 [INFO] News: Начало теста: Создание новости с пустым текстом
+13:26:51 [INFO] BasePage: Переход на страницу https://archiscope.ru/news/create
+13:26:52 [INFO] BasePage: Страница загружена: https://archiscope.ru/news/create
+13:26:52 [DEBUG] root: Сгенерирована новая статья
+13:26:52 [INFO] News: Тест завершен успешно
+13:26:52 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
+13:26:53 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
+13:26:53 [INFO] News: Начало теста: Создание новости с текстом из пробелов
+13:26:53 [INFO] BasePage: Переход на страницу https://archiscope.ru/news/create
+13:26:54 [INFO] BasePage: Страница загружена: https://archiscope.ru/news/create
+13:26:54 [DEBUG] root: Сгенерирована новая статья
+13:27:08 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
+13:27:09 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
+13:27:09 [INFO] Comments: Начало теста: Создание комментария
+13:27:09 [INFO] BasePage: Переход на страницу https://archiscope.ru/news/240
+13:27:10 [INFO] BasePage: Страница загружена: https://archiscope.ru/news/240
+13:27:10 [INFO] Comments: Тест завершен успешно
+13:27:11 [INFO] Comments: Начало теста: Проверка комментирования у неавторизованного пользователя
+13:27:11 [INFO] BasePage: Переход на страницу https://archiscope.ru/news/240
+13:27:12 [INFO] BasePage: Страница загружена: https://archiscope.ru/news/240
+13:27:12 [INFO] Comments: Тест завершен успешно
+13:27:12 [INFO] TestLogin: Начало теста: Авторизация
+13:27:12 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
+13:27:13 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
+13:27:14 [INFO] TestLogin: Тест завершен успешно
+13:27:14 [INFO] TestLogin: Начало теста: Авторизация с неверным паролем
+13:27:14 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
+13:27:15 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
+13:27:15 [INFO] TestLogin: Тест завершен успешно
+13:27:15 [INFO] TestLogin: Начало теста: Авторизация с невалидной почтой
+13:27:15 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
+13:27:16 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
+13:27:17 [INFO] TestLogin: Тест завершен успешно
+13:27:17 [INFO] TestLogin: Начало теста: Авторизация незарегистрированного пользователя
+13:27:17 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
+13:27:18 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
+13:27:18 [INFO] TestLogin: Тест завершен успешно
+13:27:18 [INFO] TestNewsList: Начало теста: Отображение списка
+13:27:18 [INFO] BasePage: Переход на страницу https://archiscope.ru/
+13:27:19 [INFO] BasePage: Страница загружена: https://archiscope.ru/
+13:27:19 [INFO] TestNewsList: Тест завершен успешно
+13:27:20 [INFO] TestNewsList: Начало теста: Поиск новостей по ключевому слову
+13:27:20 [INFO] BasePage: Переход на страницу https://archiscope.ru/
+13:27:21 [INFO] BasePage: Страница загружена: https://archiscope.ru/
+13:27:26 [INFO] TestNewsList: Тест завершен успешно
+13:27:26 [INFO] TestNewsList: Начало теста: Переход вперед и назад между страницами
+13:27:26 [INFO] BasePage: Переход на страницу https://archiscope.ru/
+13:27:27 [INFO] BasePage: Страница загружена: https://archiscope.ru/
+13:27:51 [INFO] TestNewsList: Тест завершен успешно
+13:27:52 [INFO] TestNewsList: Начало теста: Переход на страницу по номеру
+13:27:52 [INFO] BasePage: Переход на страницу https://archiscope.ru/
+13:27:53 [INFO] BasePage: Страница загружена: https://archiscope.ru/
+13:28:13 [INFO] TestNewsList: Тест завершен успешно
+13:28:14 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
+13:28:31 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
+13:28:31 [INFO] BasePage: Переход на страницу https://archiscope.ru/profile
+13:28:32 [INFO] BasePage: Страница загружена: https://archiscope.ru/profile
+13:28:32 [INFO] TestProfile: Начало теста: Проверка данных
+13:28:32 [INFO] TestProfile: Тест завершен успешно
+13:28:32 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
+13:28:33 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
+13:28:34 [INFO] BasePage: Переход на страницу https://archiscope.ru/profile
+13:28:35 [INFO] BasePage: Страница загружена: https://archiscope.ru/profile
+13:28:35 [INFO] TestProfile: Начало теста: Изменение имени
+13:28:35 [INFO] TestProfile: Тест завершен успешно
+13:28:35 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
+13:28:37 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
+13:28:37 [INFO] BasePage: Переход на страницу https://archiscope.ru/profile
+13:28:38 [INFO] BasePage: Страница загружена: https://archiscope.ru/profile
+13:28:38 [INFO] TestProfile: Начало теста: Изменение имени
+13:28:38 [INFO] TestProfile: Тест завершен успешно
+13:28:39 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
+13:28:40 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
+13:28:40 [INFO] BasePage: Переход на страницу https://archiscope.ru/profile
+13:28:41 [INFO] BasePage: Страница загружена: https://archiscope.ru/profile
+13:28:41 [INFO] TestProfile: Начало теста: Изменение фамилии
+13:28:41 [INFO] TestProfile: Тест завершен успешно
+13:28:42 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
+13:28:43 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
+13:28:43 [INFO] BasePage: Переход на страницу https://archiscope.ru/profile
+13:28:44 [INFO] BasePage: Страница загружена: https://archiscope.ru/profile
+13:28:44 [INFO] TestProfile: Начало теста: Изменение фамилии
+13:28:44 [INFO] TestProfile: Тест завершен успешно
+13:28:45 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
+13:28:46 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
+13:28:46 [INFO] BasePage: Переход на страницу https://archiscope.ru/profile
+13:28:47 [INFO] BasePage: Страница загружена: https://archiscope.ru/profile
+13:28:47 [INFO] TestProfile: Начало теста: Изменение почты
+13:28:47 [INFO] TestProfile: Тест завершен успешно
+13:28:48 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
+13:28:49 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
+13:28:49 [INFO] BasePage: Переход на страницу https://archiscope.ru/profile
+13:28:50 [INFO] BasePage: Страница загружена: https://archiscope.ru/profile
+13:28:50 [INFO] TestProfile: Начало теста: Изменение почты
+13:28:50 [INFO] TestProfile: Тест завершен успешно
+13:28:51 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
+13:28:52 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
+13:28:52 [INFO] BasePage: Переход на страницу https://archiscope.ru/profile
+13:28:53 [INFO] BasePage: Страница загружена: https://archiscope.ru/profile
+13:28:53 [INFO] TestProfile: Начало теста: Изменение номера телефона
+13:28:54 [INFO] TestProfile: Тест завершен успешно
+13:28:54 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
+13:28:55 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
+13:28:56 [INFO] BasePage: Переход на страницу https://archiscope.ru/profile
+13:28:57 [INFO] BasePage: Страница загружена: https://archiscope.ru/profile
+13:28:57 [INFO] TestProfile: Начало теста: Изменение номера телефона
+13:28:57 [INFO] TestProfile: Тест завершен успешно
+13:28:58 [INFO] TestRegister: Начало теста: Регистрация нового пользователя
+13:28:58 [INFO] BasePage: Переход на страницу https://archiscope.ru/register
+13:28:59 [INFO] BasePage: Страница загружена: https://archiscope.ru/register
+13:28:59 [DEBUG] root: Сгенерирован новый пользователь: fturov@example.com
+13:28:59 [INFO] TestRegister: Тест завершен успешно
+13:28:59 [INFO] TestRegister: Начало теста: Регистрация нового пользователя
+13:28:59 [INFO] BasePage: Переход на страницу https://archiscope.ru/register
+13:29:00 [INFO] BasePage: Страница загружена: https://archiscope.ru/register
+13:29:01 [INFO] TestRegister: Тест завершен успешно
+13:29:01 [INFO] TestRegister: Начало теста: Регистрация нового пользователя
+13:29:01 [INFO] BasePage: Переход на страницу https://archiscope.ru/register
+13:29:02 [INFO] BasePage: Страница загружена: https://archiscope.ru/register
+13:29:12 [INFO] TestAuthFlow: Начало теста: Полный цикл авторизации
+13:29:12 [DEBUG] root: Сгенерирован новый пользователь: tit_2012@example.org
+13:29:12 [INFO] BasePage: Переход на страницу https://archiscope.ru/register
+13:29:14 [INFO] BasePage: Страница загружена: https://archiscope.ru/register
+13:29:14 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
+13:29:15 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
+13:29:16 [INFO] BasePage: Сделан скриншот: artifacts/screenshots/full_cycle_auth_success.png.png
+13:29:16 [INFO] TestAuthFlow: Тест завершен успешно

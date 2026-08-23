@@ -1,0 +1,6 @@
+[32mINFO    [0m BasePage:base_page.py:16 Переход на страницу https://archiscope.ru/login
+[32mINFO    [0m BasePage:base_page.py:21 Страница загружена: https://archiscope.ru/login
+[32mINFO    [0m BasePage:base_page.py:16 Переход на страницу https://archiscope.ru/profile
+[32mINFO    [0m BasePage:base_page.py:21 Страница загружена: https://archiscope.ru/profile
+[32mINFO    [0m TestProfile:test_profile.py:88 Начало теста: Изменение почты
+[32mINFO    [0m TestProfile:test_profile.py:94 Тест завершен успешно
