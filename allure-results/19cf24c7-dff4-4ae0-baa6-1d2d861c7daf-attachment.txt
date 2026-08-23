@@ -1,0 +1,9 @@
+[32mINFO    [0m BasePage:base_page.py:16 Переход на страницу https://archiscope.ru/register
+[32mINFO    [0m BasePage:base_page.py:21 Страница загружена: https://archiscope.ru/register
+[32mINFO    [0m conftest:conftest.py:103 Зарегистрирован пользователь auto_65c9f8c7@example.com
+[32mINFO    [0m BasePage:base_page.py:16 Переход на страницу https://archiscope.ru/login
+[32mINFO    [0m BasePage:base_page.py:21 Страница загружена: https://archiscope.ru/login
+[32mINFO    [0m BasePage:base_page.py:16 Переход на страницу https://archiscope.ru/profile
+[32mINFO    [0m BasePage:base_page.py:21 Страница загружена: https://archiscope.ru/profile
+[32mINFO    [0m TestProfile:test_profile.py:109 Начало теста: Изменение номера телефона
+[32mINFO    [0m TestProfile:test_profile.py:115 Тест завершен успешно

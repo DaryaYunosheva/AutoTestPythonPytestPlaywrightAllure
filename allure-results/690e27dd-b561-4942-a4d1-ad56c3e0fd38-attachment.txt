@@ -1,0 +1,4 @@
+[32mINFO    [0m TestLogin:test_login.py:62 Начало теста: Авторизация незарегистрированного пользователя
+[32mINFO    [0m BasePage:base_page.py:16 Переход на страницу https://archiscope.ru/login
+[32mINFO    [0m BasePage:base_page.py:21 Страница загружена: https://archiscope.ru/login
+[32mINFO    [0m TestLogin:test_login.py:69 Тест завершен успешно
