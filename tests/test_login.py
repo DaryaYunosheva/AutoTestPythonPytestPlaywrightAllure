@@ -16,7 +16,7 @@ class TestLogin:
     @allure.description("Проверка, что пользователь может войти с корректными данными")
     @pytest.mark.positive
     def test_logging_success(self, page: Page):
-        logger.info("Начало теста: Авторизация")
+        logger.info("Начало теста: Авторизация с корректными данными")
         login_page = LoginPage(page)
         login_page.open()
         with allure.step("Авторизация пользователя"):

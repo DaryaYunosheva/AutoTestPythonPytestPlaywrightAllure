@@ -36,7 +36,7 @@ class TestRegister:
     @allure.description("Проверка, что пользователь не сможет повторно зарегистрироваться на платформе")
     @pytest.mark.negative
     def test_reregister_user(self, page: Page):
-        logger.info("Начало теста: Регистрация нового пользователя")
+        logger.info("Начало теста: Регистрация зарегистрированного пользователя")
         register_page = RegisterPage(page)
         register_page.open()
 
@@ -55,7 +55,7 @@ class TestRegister:
     @pytest.mark.negative
     @pytest.mark.xfail
     def test_register_wrong_email(self, page: Page):
-        logger.info("Начало теста: Регистрация нового пользователя")
+        logger.info("Начало теста: Регистрация нового пользователя с невалидной почтой")
         register_page = RegisterPage(page)
         register_page.open()
 

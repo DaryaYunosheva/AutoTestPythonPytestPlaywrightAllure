@@ -38,7 +38,7 @@ class TestProfile:
     @allure.description("Изменение имени на невалидное значение")
     @pytest.mark.negative
     def test_change_first_empty_name(self, profile_page, new_user):
-        logger.info("Начало теста: Изменение имени")
+        logger.info("Начало теста: Изменение имени на невалидное значение")
         first_name = new_user.first_name
         new = ""
         profile_page.update_profile(firstname=new)
@@ -65,7 +65,7 @@ class TestProfile:
     @allure.description("Изменение фамилии на невалидное значение")
     @pytest.mark.negative
     def test_change_last_empty_name(self, profile_page, new_user):
-        logger.info("Начало теста: Изменение фамилии")
+        logger.info("Начало теста: Изменение фамилии на невалидное значение")
         last_name = new_user.last_name
         new = ""
         profile_page.update_profile(lastname=new)
@@ -92,7 +92,7 @@ class TestProfile:
     @allure.description("Изменение почты на невалидное значение")
     @pytest.mark.negative
     def test_change_email_empty(self, profile_page, new_user):
-        logger.info("Начало теста: Изменение почты")
+        logger.info("Начало теста: Изменение почты на невалидное значение")
         email = new_user.email
         new = ""
         profile_page.update_profile(email=new)
@@ -119,7 +119,7 @@ class TestProfile:
     @allure.description("Изменение номера телефона на невалидное значение")
     @pytest.mark.negative
     def test_change_phone_empty(self, profile_page, new_user):
-        logger.info("Начало теста: Изменение номера телефона")
+        logger.info("Начало теста: Изменение номера телефона на невалидное значение")
         phone = new_user.phone
         new = ""
         profile_page.update_profile(phone=new)
