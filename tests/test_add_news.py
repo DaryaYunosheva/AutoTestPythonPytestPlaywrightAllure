@@ -44,16 +44,16 @@ class TestAddNews:
     @allure.severity(allure.severity_level.NORMAL)
     @allure.description("Проверка, что новость не создастся с пустым заголовком")
     @pytest.mark.negative
-    def test_add_news_wrong_title(self, auth_page):
+    def test_add_news_wrong_title(self, auth_page_not_new):
         logger.info("Начало теста: Создание новости с пустым заголовком")
-        add_new_page = AddNewsPage(auth_page)
+        add_new_page = AddNewsPage(auth_page_not_new)
         add_new_page.open()
         new_data = generate_news()
         logging.debug(f"Сгенерирована новая статья")
         with allure.step("Создание статьи"):
             add_new_page.create_new("", new_data["subtitle"], new_data["text"], new_data["tags"])
         with allure.step("Проверка, что пользователь остался на странице создания"):
-            expect(auth_page).to_have_url(f"{add_new_page.base_url}/news/create")
+            expect(auth_page_not_new).to_have_url(f"{add_new_page.base_url}/news/create")
         logger.info("Тест завершен успешно")
 
 
@@ -80,16 +80,16 @@ class TestAddNews:
     @allure.severity(allure.severity_level.NORMAL)
     @allure.description("")
     @pytest.mark.negative
-    def test_add_news_wrong_text(self, auth_page):
+    def test_add_news_wrong_text(self, auth_page_not_new):
         logger.info("Начало теста: Создание новости с пустым текстом")
-        add_new_page = AddNewsPage(auth_page)
+        add_new_page = AddNewsPage(auth_page_not_new)
         add_new_page.open()
         new_data = generate_news()
         logging.debug(f"Сгенерирована новая статья")
         with allure.step("Создание статьи"):
             add_new_page.create_new(new_data["title"], new_data["subtitle"], "", new_data["tags"])
         with allure.step("Проверка, что пользователь остался на странице создания"):
-            expect(auth_page).to_have_url(f"{add_new_page.base_url}/news/create")
+            expect(auth_page_not_new).to_have_url(f"{add_new_page.base_url}/news/create")
         logger.info("Тест завершен успешно")
 
 

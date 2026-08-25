@@ -1,242 +1,53 @@
-15:55:09 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.address`.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.address` has been localized to `en_US`.
-15:55:09 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.automotive`.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.automotive` has been localized to `en_US`.
-15:55:09 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.bank`.
-15:55:09 [DEBUG] faker.factory: Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
-15:55:09 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.barcode`.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.barcode` has been localized to `en_US`.
-15:55:09 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.color`.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.color` has been localized to `en_US`.
-15:55:09 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.company`.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.company` has been localized to `en_US`.
-15:55:09 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.credit_card`.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.credit_card` has been localized to `en_US`.
-15:55:09 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.currency`.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.currency` has been localized to `en_US`.
-15:55:09 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.date_time`.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.date_time` has been localized to `en_US`.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.doi` does not feature localization. Specified locale `en_US` is not used for this provider.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not used for this provider.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not used for this provider.
-15:55:09 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.geo`.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.geo` has been localized to `en_US`.
-15:55:09 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.internet`.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.internet` has been localized to `en_US`.
-15:55:09 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.isbn`.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.isbn` has been localized to `en_US`.
-15:55:09 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.job`.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.job` has been localized to `en_US`.
-15:55:09 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.lorem`.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.lorem` has been localized to `en_US`.
-15:55:09 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.misc`.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.misc` has been localized to `en_US`.
-15:55:09 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.passport`.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.passport` has been localized to `en_US`.
-15:55:09 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.person`.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.person` has been localized to `en_US`.
-15:55:09 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.phone_number`.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.phone_number` has been localized to `en_US`.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not used for this provider.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not used for this provider.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not used for this provider.
-15:55:09 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.ssn`.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.ssn` has been localized to `en_US`.
-15:55:09 [DEBUG] faker.factory: Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not used for this provider.
-15:55:09 [DEBUG] asyncio: Using proactor: IocpProactor
-15:55:09 [INFO] BasePage: Переход на страницу https://archiscope.ru/register
-15:55:11 [INFO] BasePage: Страница загружена: https://archiscope.ru/register
-15:55:11 [INFO] conftest: Зарегистрирован пользователь auto_b5d99823@example.com
-15:55:11 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
-15:55:12 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
-15:55:12 [INFO] News: Начало теста: Создание новости
-15:55:12 [INFO] BasePage: Переход на страницу https://archiscope.ru/news/create
-15:55:13 [INFO] BasePage: Страница загружена: https://archiscope.ru/news/create
-15:55:13 [DEBUG] root: Сгенерирована новая статья
-15:55:13 [INFO] News: Тест завершен успешно
-15:55:14 [INFO] BasePage: Переход на страницу https://archiscope.ru/register
-15:55:15 [INFO] BasePage: Страница загружена: https://archiscope.ru/register
-15:55:15 [INFO] conftest: Зарегистрирован пользователь auto_97217cef@example.com
-15:55:15 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
-15:55:16 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
-15:55:16 [INFO] News: Начало теста: Создание новости с пустым заголовком
-15:55:16 [INFO] BasePage: Переход на страницу https://archiscope.ru/news/create
-15:55:17 [INFO] BasePage: Страница загружена: https://archiscope.ru/news/create
-15:55:17 [DEBUG] root: Сгенерирована новая статья
-15:55:17 [INFO] News: Тест завершен успешно
-15:55:17 [INFO] BasePage: Переход на страницу https://archiscope.ru/register
-15:55:18 [INFO] BasePage: Страница загружена: https://archiscope.ru/register
-15:55:19 [INFO] conftest: Зарегистрирован пользователь auto_3a7dc9d8@example.com
-15:55:19 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
-15:55:19 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
-15:55:20 [INFO] News: Начало теста: Создание новости с заголовком из пробелов
-15:55:20 [INFO] BasePage: Переход на страницу https://archiscope.ru/news/create
-15:55:21 [INFO] BasePage: Страница загружена: https://archiscope.ru/news/create
-15:55:21 [DEBUG] root: Сгенерирована новая статья
-15:55:31 [INFO] BasePage: Переход на страницу https://archiscope.ru/register
-15:55:32 [INFO] BasePage: Страница загружена: https://archiscope.ru/register
-15:55:33 [INFO] conftest: Зарегистрирован пользователь auto_49090af1@example.com
-15:55:33 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
-15:55:34 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
-15:55:34 [INFO] News: Начало теста: Создание новости с пустым текстом
-15:55:34 [INFO] BasePage: Переход на страницу https://archiscope.ru/news/create
-15:55:35 [INFO] BasePage: Страница загружена: https://archiscope.ru/news/create
-15:55:35 [DEBUG] root: Сгенерирована новая статья
-15:55:35 [INFO] News: Тест завершен успешно
-15:55:35 [INFO] BasePage: Переход на страницу https://archiscope.ru/register
-15:55:36 [INFO] BasePage: Страница загружена: https://archiscope.ru/register
-15:55:36 [INFO] conftest: Зарегистрирован пользователь auto_9ee84a62@example.com
-15:55:36 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
-15:55:37 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
-15:55:38 [INFO] News: Начало теста: Создание новости с текстом из пробелов
-15:55:38 [INFO] BasePage: Переход на страницу https://archiscope.ru/news/create
-15:55:38 [INFO] BasePage: Страница загружена: https://archiscope.ru/news/create
-15:55:38 [DEBUG] root: Сгенерирована новая статья
-15:55:49 [INFO] BasePage: Переход на страницу https://archiscope.ru/register
-15:55:50 [INFO] BasePage: Страница загружена: https://archiscope.ru/register
-15:55:50 [INFO] conftest: Зарегистрирован пользователь auto_82d57010@example.com
-15:55:50 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
-15:55:51 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
-15:55:52 [INFO] Comments: Начало теста: Создание комментария
-15:55:52 [INFO] BasePage: Переход на страницу https://archiscope.ru/news/create
-15:55:52 [INFO] BasePage: Страница загружена: https://archiscope.ru/news/create
-15:55:52 [INFO] BasePage: Переход на страницу https://archiscope.ru/
-15:55:53 [INFO] BasePage: Страница загружена: https://archiscope.ru/
-15:55:54 [INFO] Comments: Тест завершен успешно
-15:55:54 [INFO] Comments: Начало теста: Проверка комментирования у неавторизованного пользователя
-15:55:54 [INFO] BasePage: Переход на страницу https://archiscope.ru/news/240
-15:55:55 [INFO] BasePage: Страница загружена: https://archiscope.ru/news/240
-15:55:55 [INFO] Comments: Тест завершен успешно
-15:55:55 [INFO] TestLogin: Начало теста: Авторизация
-15:55:55 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
-15:55:57 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
-15:55:57 [INFO] TestLogin: Тест завершен успешно
-15:55:57 [INFO] TestLogin: Начало теста: Авторизация с неверным паролем
-15:55:57 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
-15:55:58 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
-15:55:59 [INFO] TestLogin: Тест завершен успешно
-15:55:59 [INFO] TestLogin: Начало теста: Авторизация с невалидной почтой
-15:55:59 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
-15:56:00 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
-15:56:00 [INFO] TestLogin: Тест завершен успешно
-15:56:00 [INFO] TestLogin: Начало теста: Авторизация незарегистрированного пользователя
-15:56:00 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
-15:56:01 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
-15:56:01 [INFO] TestLogin: Тест завершен успешно
-15:56:01 [INFO] TestNewsList: Начало теста: Отображение списка
-15:56:01 [INFO] BasePage: Переход на страницу https://archiscope.ru/
-15:56:03 [INFO] BasePage: Страница загружена: https://archiscope.ru/
-15:56:03 [INFO] TestNewsList: Тест завершен успешно
-15:56:03 [INFO] TestNewsList: Начало теста: Поиск новостей по ключевому слову
-15:56:03 [INFO] BasePage: Переход на страницу https://archiscope.ru/
-15:56:04 [INFO] BasePage: Страница загружена: https://archiscope.ru/
-15:56:09 [INFO] TestNewsList: Тест завершен успешно
-15:56:10 [INFO] TestNewsList: Начало теста: Переход вперед и назад между страницами
-15:56:10 [INFO] BasePage: Переход на страницу https://archiscope.ru/
-15:56:11 [INFO] BasePage: Страница загружена: https://archiscope.ru/
-15:56:31 [INFO] TestNewsList: Тест завершен успешно
-15:56:31 [INFO] TestNewsList: Начало теста: Переход на страницу по номеру
-15:56:31 [INFO] BasePage: Переход на страницу https://archiscope.ru/
-15:56:33 [INFO] BasePage: Страница загружена: https://archiscope.ru/
-15:56:53 [INFO] TestNewsList: Тест завершен успешно
-15:56:53 [INFO] BasePage: Переход на страницу https://archiscope.ru/register
-15:56:54 [INFO] BasePage: Страница загружена: https://archiscope.ru/register
-15:56:55 [INFO] conftest: Зарегистрирован пользователь auto_d35ef525@example.com
-15:56:55 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
-15:56:55 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
-15:56:56 [INFO] BasePage: Переход на страницу https://archiscope.ru/profile
-15:56:56 [INFO] BasePage: Страница загружена: https://archiscope.ru/profile
-15:56:56 [INFO] TestProfile: Начало теста: Проверка данных
-15:56:57 [INFO] TestProfile: Тест завершен успешно
-15:56:57 [INFO] BasePage: Переход на страницу https://archiscope.ru/register
-15:56:58 [INFO] BasePage: Страница загружена: https://archiscope.ru/register
-15:56:58 [INFO] conftest: Зарегистрирован пользователь auto_b3f465f4@example.com
-15:56:58 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
-15:56:59 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
-15:56:59 [INFO] BasePage: Переход на страницу https://archiscope.ru/profile
-15:57:00 [INFO] BasePage: Страница загружена: https://archiscope.ru/profile
-15:57:00 [INFO] TestProfile: Начало теста: Изменение имени
-15:57:00 [INFO] TestProfile: Тест завершен успешно
-15:57:00 [INFO] BasePage: Переход на страницу https://archiscope.ru/register
-15:57:02 [INFO] BasePage: Страница загружена: https://archiscope.ru/register
-15:57:02 [INFO] conftest: Зарегистрирован пользователь auto_4168fe2c@example.com
-15:57:02 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
-15:57:03 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
-15:57:03 [INFO] BasePage: Переход на страницу https://archiscope.ru/profile
-15:57:04 [INFO] BasePage: Страница загружена: https://archiscope.ru/profile
-15:57:04 [INFO] TestProfile: Начало теста: Изменение имени
-15:57:04 [INFO] TestProfile: Тест завершен успешно
-15:57:04 [INFO] BasePage: Переход на страницу https://archiscope.ru/register
-15:57:05 [INFO] BasePage: Страница загружена: https://archiscope.ru/register
-15:57:06 [INFO] conftest: Зарегистрирован пользователь auto_cab31cc5@example.com
-15:57:06 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
-15:57:07 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
-15:57:07 [INFO] BasePage: Переход на страницу https://archiscope.ru/profile
-15:57:08 [INFO] BasePage: Страница загружена: https://archiscope.ru/profile
-15:57:08 [INFO] TestProfile: Начало теста: Изменение фамилии
-15:57:08 [INFO] TestProfile: Тест завершен успешно
-15:57:08 [INFO] BasePage: Переход на страницу https://archiscope.ru/register
-15:57:09 [INFO] BasePage: Страница загружена: https://archiscope.ru/register
-15:57:10 [INFO] conftest: Зарегистрирован пользователь auto_3ffe605a@example.com
-15:57:10 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
-15:57:10 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
-15:57:11 [INFO] BasePage: Переход на страницу https://archiscope.ru/profile
-15:57:12 [INFO] BasePage: Страница загружена: https://archiscope.ru/profile
-15:57:12 [INFO] TestProfile: Начало теста: Изменение фамилии
-15:57:12 [INFO] TestProfile: Тест завершен успешно
-15:57:12 [INFO] BasePage: Переход на страницу https://archiscope.ru/register
-15:57:13 [INFO] BasePage: Страница загружена: https://archiscope.ru/register
-15:57:14 [INFO] conftest: Зарегистрирован пользователь auto_5aee4768@example.com
-15:57:14 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
-15:57:14 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
-15:57:15 [INFO] BasePage: Переход на страницу https://archiscope.ru/profile
-15:57:15 [INFO] BasePage: Страница загружена: https://archiscope.ru/profile
-15:57:15 [INFO] TestProfile: Начало теста: Изменение почты
-15:57:16 [INFO] TestProfile: Тест завершен успешно
-15:57:16 [INFO] BasePage: Переход на страницу https://archiscope.ru/register
-15:57:17 [INFO] BasePage: Страница загружена: https://archiscope.ru/register
-15:57:17 [INFO] conftest: Зарегистрирован пользователь auto_a99c36e7@example.com
-15:57:17 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
-15:57:18 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
-15:57:18 [INFO] BasePage: Переход на страницу https://archiscope.ru/profile
-15:57:19 [INFO] BasePage: Страница загружена: https://archiscope.ru/profile
-15:57:19 [INFO] TestProfile: Начало теста: Изменение почты
-15:57:19 [INFO] TestProfile: Тест завершен успешно
-15:57:20 [INFO] BasePage: Переход на страницу https://archiscope.ru/register
-15:57:21 [INFO] BasePage: Страница загружена: https://archiscope.ru/register
-15:57:21 [INFO] conftest: Зарегистрирован пользователь auto_65c9f8c7@example.com
-15:57:21 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
-15:57:22 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
-15:57:22 [INFO] BasePage: Переход на страницу https://archiscope.ru/profile
-15:57:23 [INFO] BasePage: Страница загружена: https://archiscope.ru/profile
-15:57:23 [INFO] TestProfile: Начало теста: Изменение номера телефона
-15:57:23 [INFO] TestProfile: Тест завершен успешно
-15:57:23 [INFO] BasePage: Переход на страницу https://archiscope.ru/register
-15:57:25 [INFO] BasePage: Страница загружена: https://archiscope.ru/register
-15:57:25 [INFO] conftest: Зарегистрирован пользователь auto_f9b9a8d1@example.com
-15:57:25 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
-15:57:26 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
-15:57:26 [INFO] BasePage: Переход на страницу https://archiscope.ru/profile
-15:57:27 [INFO] BasePage: Страница загружена: https://archiscope.ru/profile
-15:57:27 [INFO] TestProfile: Начало теста: Изменение номера телефона
-15:57:27 [INFO] TestProfile: Тест завершен успешно
-15:57:27 [INFO] TestRegister: Начало теста: Регистрация нового пользователя
-15:57:27 [INFO] BasePage: Переход на страницу https://archiscope.ru/register
-15:57:28 [INFO] BasePage: Страница загружена: https://archiscope.ru/register
-15:57:28 [DEBUG] root: Сгенерирован новый пользователь: auto_57354857@example.com
-15:57:29 [INFO] TestRegister: Тест завершен успешно
-15:57:29 [INFO] TestRegister: Начало теста: Регистрация нового пользователя
-15:57:29 [INFO] BasePage: Переход на страницу https://archiscope.ru/register
-15:57:30 [INFO] BasePage: Страница загружена: https://archiscope.ru/register
-15:57:30 [INFO] TestRegister: Тест завершен успешно
-15:57:30 [INFO] TestRegister: Начало теста: Регистрация нового пользователя
-15:57:30 [INFO] BasePage: Переход на страницу https://archiscope.ru/register
-15:57:31 [INFO] BasePage: Страница загружена: https://archiscope.ru/register
-15:57:42 [INFO] TestAuthFlow: Начало теста: Полный цикл авторизации
-15:57:42 [DEBUG] root: Сгенерирован новый пользователь: auto_1efec321@example.com
-15:57:42 [INFO] BasePage: Переход на страницу https://archiscope.ru/register
-15:57:43 [INFO] BasePage: Страница загружена: https://archiscope.ru/register
-15:57:43 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
-15:57:44 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
-15:57:44 [INFO] BasePage: Сделан скриншот: artifacts/screenshots/full_cycle_auth_success.png.png
-15:57:44 [INFO] TestAuthFlow: Тест завершен успешно
+19:39:31 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.address`.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.address` has been localized to `en_US`.
+19:39:31 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.automotive`.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.automotive` has been localized to `en_US`.
+19:39:31 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.bank`.
+19:39:31 [DEBUG] faker.factory: Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+19:39:31 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.barcode`.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.barcode` has been localized to `en_US`.
+19:39:31 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.color`.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.color` has been localized to `en_US`.
+19:39:31 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.company`.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.company` has been localized to `en_US`.
+19:39:31 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.credit_card`.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.credit_card` has been localized to `en_US`.
+19:39:31 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.currency`.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.currency` has been localized to `en_US`.
+19:39:31 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.date_time`.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.date_time` has been localized to `en_US`.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.doi` does not feature localization. Specified locale `en_US` is not used for this provider.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not used for this provider.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not used for this provider.
+19:39:31 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.geo`.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.geo` has been localized to `en_US`.
+19:39:31 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.internet`.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.internet` has been localized to `en_US`.
+19:39:31 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.isbn`.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.isbn` has been localized to `en_US`.
+19:39:31 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.job`.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.job` has been localized to `en_US`.
+19:39:31 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.lorem`.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.lorem` has been localized to `en_US`.
+19:39:31 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.misc`.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.misc` has been localized to `en_US`.
+19:39:31 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.passport`.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.passport` has been localized to `en_US`.
+19:39:31 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.person`.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.person` has been localized to `en_US`.
+19:39:31 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.phone_number`.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.phone_number` has been localized to `en_US`.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not used for this provider.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not used for this provider.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not used for this provider.
+19:39:31 [DEBUG] faker.factory: Looking for locale `en_US` in provider `faker.providers.ssn`.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.ssn` has been localized to `en_US`.
+19:39:31 [DEBUG] faker.factory: Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not used for this provider.
+19:39:31 [DEBUG] asyncio: Using proactor: IocpProactor
+19:39:32 [INFO] BasePage: Переход на страницу https://archiscope.ru/login
+19:39:33 [INFO] BasePage: Страница загружена: https://archiscope.ru/login
+19:39:33 [INFO] News: Начало теста: Создание новости с пустым текстом
+19:39:33 [INFO] BasePage: Переход на страницу https://archiscope.ru/news/create
+19:39:34 [INFO] BasePage: Страница загружена: https://archiscope.ru/news/create
+19:39:34 [DEBUG] root: Сгенерирована новая статья
+19:39:34 [INFO] News: Тест завершен успешно

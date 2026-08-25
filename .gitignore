@@ -1,0 +1,20 @@
+# PyCharm
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Virtual environment
+.venv/
+venv/
+
+# Playwright
+artifacts/
+
+# Allure
+allure-results/
+
+# Environment variables
+.env

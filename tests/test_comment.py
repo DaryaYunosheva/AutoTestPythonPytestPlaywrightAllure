@@ -17,7 +17,7 @@ class TestDetailsNews:
     @allure.severity(allure.severity_level.NORMAL)
     @allure.description("Проверка добавления комментария к новости")
     @pytest.mark.positive
-    def test_add_comment(self, auth_page,new_user):
+    def test_add_comment(self, auth_page, new_user):
         logger.info("Начало теста: Создание комментария")
         news_page = NewsListPage(auth_page)
         add_news_page = AddNewsPage(auth_page)
