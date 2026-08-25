@@ -1,9 +1,0 @@
-[32mINFO    [0m BasePage:base_page.py:16 Переход на страницу https://archiscope.ru/register
-[32mINFO    [0m BasePage:base_page.py:21 Страница загружена: https://archiscope.ru/register
-[32mINFO    [0m conftest:conftest.py:103 Зарегистрирован пользователь auto_4168fe2c@example.com
-[32mINFO    [0m BasePage:base_page.py:16 Переход на страницу https://archiscope.ru/login
-[32mINFO    [0m BasePage:base_page.py:21 Страница загружена: https://archiscope.ru/login
-[32mINFO    [0m BasePage:base_page.py:16 Переход на страницу https://archiscope.ru/profile
-[32mINFO    [0m BasePage:base_page.py:21 Страница загружена: https://archiscope.ru/profile
-[32mINFO    [0m TestProfile:test_profile.py:41 Начало теста: Изменение имени
-[32mINFO    [0m TestProfile:test_profile.py:48 Тест завершен успешно

@@ -1,5 +1,0 @@
-[32mINFO    [0m TestRegister:test_register.py:19 Начало теста: Регистрация нового пользователя
-[32mINFO    [0m BasePage:base_page.py:16 Переход на страницу https://archiscope.ru/register
-[32mINFO    [0m BasePage:base_page.py:21 Страница загружена: https://archiscope.ru/register
-[35mDEBUG   [0m root:test_register.py:24 Сгенерирован новый пользователь: auto_57354857@example.com
-[32mINFO    [0m TestRegister:test_register.py:32 Тест завершен успешно
