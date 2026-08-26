@@ -62,7 +62,7 @@ class TestAddNews:
     @allure.description("Проверка, что новость не создастся с заголовком из пробелов")
     @pytest.mark.xfail
     @pytest.mark.negative
-    def test_add_news_probel_title(self, auth_page):
+    def test_add_news_probel_title(self, auth_page_not_new):
         logger.info("Начало теста: Создание новости с заголовком из пробелов")
         add_new_page = AddNewsPage(auth_page)
         add_new_page.open()
@@ -98,9 +98,9 @@ class TestAddNews:
     @allure.description("Проверка, что новость не создастся с текстом из пробелов")
     @pytest.mark.xfail
     @pytest.mark.negative
-    def test_add_news_probel_text(self, auth_page):
+    def test_add_news_probel_text(self, auth_page_not_new):
         logger.info("Начало теста: Создание новости с текстом из пробелов")
-        add_new_page = AddNewsPage(auth_page)
+        add_new_page = AddNewsPage(auth_page_not_new)
         add_new_page.open()
         new_data = generate_news()
         logging.debug(f"Сгенерирована новая статья")
