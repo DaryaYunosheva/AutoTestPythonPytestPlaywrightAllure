@@ -27,8 +27,7 @@ class TestRegister:
             user_data['password']
         )
         with allure.step("Проверка редиректа /login"):
-            page.wait_for_url("**/login", timeout=10000)
-            assert "/login" in page.url
+            register_page.check_redirect()
         logger.info("Тест завершен успешно")
 
     @allure.story("Регистрация зарегистрированного пользователя")

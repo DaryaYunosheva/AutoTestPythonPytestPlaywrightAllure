@@ -1,4 +1,5 @@
 from pages.base_page import BasePage
+from playwright.sync_api import expect
 
 class LoginPage(BasePage):
     def open(self):
@@ -11,3 +12,7 @@ class LoginPage(BasePage):
         self.page.get_by_role("textbox", name="••••••").fill(f"{password}")
         self.page.get_by_role("button", name="Войти").click()
         return self
+
+    def check_button(self):
+        add_news_button = self.page.get_by_role("link", name="Добавить новость")
+        expect(add_news_button).to_be_visible(timeout=15000)

@@ -1,5 +1,5 @@
 from pages.base_page import BasePage
-from playwright.sync_api import Locator
+from playwright.sync_api import expect
 
 class NewsDetailPage(BasePage):
 
@@ -19,3 +19,8 @@ class NewsDetailPage(BasePage):
 
     def get_button(self):
         return self.page.get_by_role("button", name="Отправить")
+
+    def check_comment(self, comment, new_user):
+        expect(self.get_comment(comment)).to_be_visible()
+        expect(self.get_comment_card(comment)).to_be_visible()
+        expect(self.get_comment_author(comment)).to_have_text(f"{new_user.first_name} {new_user.last_name}")

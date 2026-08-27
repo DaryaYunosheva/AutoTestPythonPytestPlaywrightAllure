@@ -1,16 +1,18 @@
 from playwright.sync_api import expect, Locator
-
+import allure
 from pages.base_page import BasePage
 
 class NewsListPage(BasePage):
     def open(self):
         self.navigate()
+        self.page.wait_for_selector(".card", timeout=10000)
         return self
 
     def search(self, query: str):
         search_input = self.page.get_by_placeholder("Поиск...")
         search_input.fill(query)
         search_input.press("Enter")
+        self.page.wait_for_timeout(5000)
         return self
 
     def click_news(self, title: str):
@@ -23,14 +25,17 @@ class NewsListPage(BasePage):
 
     def click_page(self, page_number: int):
         self.page.get_by_role("button", name=str(page_number), exact=True).click()
+        self.page.wait_for_timeout(5000)
         return self
 
     def click_next(self):
         self.page.get_by_role("button", name="»").click()
+        self.page.wait_for_timeout(5000)
         return self
 
     def click_previous(self):
         self.page.get_by_role("button", name="«").click()
+        self.page.wait_for_timeout(5000)
         return self
 
     def get_card_titles(self):
@@ -53,3 +58,22 @@ class NewsListPage(BasePage):
 
     def get_card_tags(self, card: Locator):
         return card.locator(".badge").all_inner_texts()
+
+    def check_word_in_card(self, cards, word):
+        expect(cards.first).to_be_visible()
+        count = cards.count()
+        with allure.step("Проверка наличия слова в статье"):
+            for i in range(count):
+                card = cards.nth(i)
+
+                title = self.get_card_title(card)
+                subtitle = self.get_card_subtitle(card)
+                text = self.get_card_text(card)
+                tags = self.get_card_tags(card)
+
+                card_content = " ".join([title, subtitle, text, *tags]).lower()
+                assert word.lower() in card_content
+
+    def check_buttons_on_start(self):
+        expect(self.page.get_by_role("button", name="«")).to_be_disabled()
+        expect(self.page.get_by_role("button", name="»")).to_be_enabled()

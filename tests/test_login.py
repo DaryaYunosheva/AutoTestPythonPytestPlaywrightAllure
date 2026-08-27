@@ -22,8 +22,8 @@ class TestLogin:
         with allure.step("Авторизация пользователя"):
             login_page.login(user1.email, user1.password)
         with allure.step("Проверка редиректа"):
-            add_news_button = page.get_by_role("link", name="Добавить новость")
-            expect(add_news_button).to_be_visible(timeout=15000)
+            login_page.check_button()
+
         logger.info("Тест завершен успешно")
 
     @allure.story("Вход с некорректным паролем")

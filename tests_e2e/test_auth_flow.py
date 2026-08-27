@@ -33,15 +33,13 @@ class TestAuthFlow:
                 user_data['password']
             )
         with allure.step("Проверка редиректа /login"):
-            page.wait_for_url("**/login", timeout=10000)
-            assert "/login" in page.url
+            register_page.check_redirect()
 
         with allure.step("Выполнить вход зарегистрированного пользователя"):
             login_page.open()
             login_page.login(user_data['email'], user_data['password'])
 
         with allure.step("Проверка успешной авторизации"):
-            add_news_button = page.get_by_role("link", name="Добавить новость")
-            expect(add_news_button).to_be_visible(timeout=10000)
+            login_page.check_button()
         register_page.take_screenshot("full_cycle_auth_success.png")
         logger.info("Тест завершен успешно")

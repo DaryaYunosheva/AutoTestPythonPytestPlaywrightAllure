@@ -13,3 +13,7 @@ class RegisterPage(BasePage):
         self.page.locator("input[name=\"password\"]").fill(password)
         self.page.get_by_role("button", name="Зарегистрироваться").click(timeout=10000)
         return self
+
+    def check_redirect(self):
+        self.page.wait_for_url("**/login", timeout=10000)
+        assert "/login" in self.page.url

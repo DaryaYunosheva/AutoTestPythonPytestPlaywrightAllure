@@ -36,9 +36,7 @@ class TestDetailsNews:
             news_detail_page.page.reload()
 
         with allure.step("Проверка комментария"):
-            expect(news_detail_page.get_comment(comment)).to_be_visible()
-            expect(news_detail_page.get_comment_card(comment)).to_be_visible()
-            expect(news_detail_page.get_comment_author(comment)).to_have_text(f"{new_user.first_name} {new_user.last_name}")
+            news_detail_page.check_comment(comment, new_user)
 
         logger.info("Тест завершен успешно")
 

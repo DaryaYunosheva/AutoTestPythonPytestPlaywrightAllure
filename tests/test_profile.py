@@ -1,7 +1,6 @@
 import allure
 import pytest
 import logging
-from playwright.sync_api import expect
 
 from helpers.data_generator import generate_email
 
@@ -30,7 +29,7 @@ class TestProfile:
         profile_page.update_profile(firstname=new)
         profile_page.page.reload()
 
-        expect(profile_page.get_input("first_name")).to_have_value(new)
+        profile_page.check_one("first_name", new)
         logger.info("Тест завершен успешно")
 
     @allure.story("Изменение имени")
@@ -44,7 +43,7 @@ class TestProfile:
         profile_page.update_profile(firstname=new)
         profile_page.page.reload()
 
-        expect(profile_page.get_input("first_name")).to_have_value(first_name)
+        profile_page.check_one("first_name", first_name)
         logger.info("Тест завершен успешно")
 
     @allure.story("Изменение фамилии")
@@ -57,7 +56,7 @@ class TestProfile:
         profile_page.update_profile(lastname=new)
         profile_page.page.reload()
 
-        expect(profile_page.get_input("last_name")).to_have_value(new)
+        profile_page.check_one("last_name", new)
         logger.info("Тест завершен успешно")
 
     @allure.story("Изменение фамилии")
@@ -71,7 +70,7 @@ class TestProfile:
         profile_page.update_profile(lastname=new)
         profile_page.page.reload()
 
-        expect(profile_page.get_input("last_name")).to_have_value(last_name)
+        profile_page.check_one("last_name", last_name)
         logger.info("Тест завершен успешно")
 
     @allure.story("Изменение почты")
@@ -84,7 +83,7 @@ class TestProfile:
         profile_page.update_profile(email=new)
         profile_page.page.reload()
 
-        expect(profile_page.get_input("email")).to_have_value(new)
+        profile_page.check_one("email", new)
         logger.info("Тест завершен успешно")
 
     @allure.story("Изменение почты")
@@ -98,7 +97,7 @@ class TestProfile:
         profile_page.update_profile(email=new)
         profile_page.page.reload()
 
-        expect(profile_page.get_input("email")).to_have_value(email)
+        profile_page.check_one("email", email)
         logger.info("Тест завершен успешно")
 
     @allure.story("Изменение номера телефона")
@@ -111,7 +110,7 @@ class TestProfile:
         profile_page.update_profile(phone=new)
         profile_page.page.reload()
 
-        expect(profile_page.get_input("phone")).to_have_value(new)
+        profile_page.check_one("phone", new)
         logger.info("Тест завершен успешно")
 
     @allure.story("Изменение номера телефона")
@@ -125,5 +124,5 @@ class TestProfile:
         profile_page.update_profile(phone=new)
         profile_page.page.reload()
 
-        expect(profile_page.get_input("phone")).to_have_value(phone)
+        profile_page.check_one("phone", phone)
         logger.info("Тест завершен успешно")

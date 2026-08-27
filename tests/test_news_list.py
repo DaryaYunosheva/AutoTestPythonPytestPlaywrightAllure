@@ -17,7 +17,6 @@ class TestNewsList:
         logger.info("Начало теста: Отображение списка")
         news_list = NewsListPage(page)
         news_list.open()
-        page.wait_for_selector(".card", timeout=10000)
         news_list.should_have_news()
         logger.info("Тест завершен успешно")
 
@@ -29,25 +28,11 @@ class TestNewsList:
         logger.info("Начало теста: Поиск новостей по ключевому слову")
         news_list = NewsListPage(page)
         news_list.open()
-        page.wait_for_selector(".card", timeout=10000)
         word = "Банк"
         with allure.step("Поиск новостей по заданному слову"):
             news_list.search(word)
-            page.wait_for_timeout(5000)
             cards = news_list.get_cards()
-        expect(cards.first).to_be_visible()
-        count = cards.count()
-        with allure.step("Проверка наличия слова в статье"):
-            for i in range(count):
-                card = cards.nth(i)
-
-                title = news_list.get_card_title(card)
-                subtitle = news_list.get_card_subtitle(card)
-                text = news_list.get_card_text(card)
-                tags = news_list.get_card_tags(card)
-
-                card_content = " ".join([title, subtitle, text, *tags]).lower()
-                assert word.lower() in card_content
+        news_list.check_word_in_card(cards, word)
 
         logger.info("Тест завершен успешно")
 
@@ -61,8 +46,7 @@ class TestNewsList:
         news_page.open()
 
         with allure.step("Проверка корректного отображения кнопок на начальной странице"):
-            expect(news_page.page.get_by_role("button", name="«")).to_be_disabled()
-            expect(news_page.page.get_by_role("button", name="»")).to_be_enabled()
+            news_page.check_buttons_on_start()
 
         with allure.step("Сохранение данных начальной страницы"):
             start_page = news_page.get_current_page()
@@ -70,7 +54,7 @@ class TestNewsList:
 
         with allure.step("Переход на следующую страницу"):
             news_page.click_next()
-            page.wait_for_timeout(10000)
+
 
         with allure.step("Сохранение данных новой страницы"):
             second_list = news_page.get_card_titles()
@@ -82,7 +66,6 @@ class TestNewsList:
 
         with allure.step("Переход на предыдущую страницу"):
             news_page.click_previous()
-            page.wait_for_timeout(10000)
 
         with allure.step("Сохранение данных новой страницы"):
             last_list = news_page.get_card_titles()
@@ -110,7 +93,6 @@ class TestNewsList:
 
         with allure.step("Переход на страницу с номером 2"):
             news_page.click_page(2)
-            page.wait_for_timeout(10000)
 
         with allure.step("Сохранение данных новой страницы"):
             second_list = news_page.get_card_titles()
@@ -122,7 +104,6 @@ class TestNewsList:
 
         with allure.step("Переход на страницу 1"):
             news_page.click_page(1)
-            page.wait_for_timeout(10000)
 
         with allure.step("Сохранение данных новой страницы"):
             last_list = news_page.get_card_titles()

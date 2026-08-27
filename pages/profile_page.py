@@ -28,13 +28,15 @@ class ProfilePage(BasePage):
 
     def should_have_profile(self,new_user):
         with allure.step("Проверка имени"):
-            expect(self.page.locator("input[name=\"first_name\"]")).to_have_value(new_user.first_name)
+            self.check_one("first_name", new_user.first_name)
         with allure.step("Проверка фамилии"):
-            expect(self.page.locator("input[name=\"last_name\"]")).to_have_value(new_user.last_name)
+            self.check_one("last_name", new_user.last_name)
         with allure.step("Проверка почты"):
-            expect(self.page.locator("input[name=\"email\"]")).to_have_value(new_user.email)
+            self.check_one("email", new_user.email)
         with allure.step("Проверка телефона"):
-            expect(self.page.locator("input[name=\"phone\"]")).to_have_value(new_user.phone)
+            self.check_one("phone", new_user.phone)
 
-    def get_input(self, typ: str):
-        return self.page.locator(f"input[name=\"{typ}\"]")
+
+    def check_one(self, typ: str, word):
+        element = self.page.locator(f"input[name=\"{typ}\"]")
+        expect(element).to_have_value(word)

@@ -26,17 +26,10 @@ class TestAddNews:
             add_new_page.create_new(new_data["title"], new_data["subtitle"], new_data["text"], new_data["tags"])
 
         with allure.step("Проверка редиректа"):
-            auth_page.wait_for_url("**/", timeout=20000)
-            auth_page.reload()
-            assert f"{add_new_page.base_url}/"==auth_page.url
+            add_new_page.check_redirect()
 
         with allure.step("Проверка наличия новости"):
-            card = add_new_page.get_news_card(new_data["title"])
-            expect(card).to_be_visible()
-            expect(card).to_contain_text(new_data["subtitle"][:10])
-            expect(card).to_contain_text(new_data["text"][:10])
-            expect(card).to_contain_text(new_user.first_name)
-            expect(card).to_contain_text(new_user.last_name)
+            add_new_page.check_new(new_data, new_user)
         logger.info("Тест завершен успешно")
 
 
@@ -53,7 +46,7 @@ class TestAddNews:
         with allure.step("Создание статьи"):
             add_new_page.create_new("", new_data["subtitle"], new_data["text"], new_data["tags"])
         with allure.step("Проверка, что пользователь остался на странице создания"):
-            expect(auth_page_not_new).to_have_url(f"{add_new_page.base_url}/news/create")
+            add_new_page.check_not_redirect()
         logger.info("Тест завершен успешно")
 
 
@@ -71,8 +64,7 @@ class TestAddNews:
         with allure.step("Создание статьи"):
             add_new_page.create_new("       ", new_data["subtitle"], new_data["text"], new_data["tags"])
         with allure.step("Проверка, что пользователь остался на странице создания"):
-            expect(add_new_page.get_create_button()).to_be_visible(timeout=10000)
-            expect(add_new_page.page).to_have_url(f"{add_new_page.base_url}/news/create", timeout=30000)
+            add_new_page.check_not_redirect()
         logger.info("Тест завершен успешно")
 
 
@@ -89,7 +81,7 @@ class TestAddNews:
         with allure.step("Создание статьи"):
             add_new_page.create_new(new_data["title"], new_data["subtitle"], "", new_data["tags"])
         with allure.step("Проверка, что пользователь остался на странице создания"):
-            expect(auth_page_not_new).to_have_url(f"{add_new_page.base_url}/news/create")
+            add_new_page.check_not_redirect()
         logger.info("Тест завершен успешно")
 
 
@@ -107,6 +99,5 @@ class TestAddNews:
         with allure.step("Создание статьи"):
             add_new_page.create_new(new_data["title"], new_data["subtitle"], "      ", new_data["tags"])
         with allure.step("Проверка, что пользователь остался на странице создания"):
-            expect(add_new_page.get_create_button()).to_be_visible(timeout=10000)
-            expect(add_new_page.page).to_have_url(f"{add_new_page.base_url}/news/create", timeout=30000)
+            add_new_page.check_not_redirect()
         logger.info("Тест завершен успешно")

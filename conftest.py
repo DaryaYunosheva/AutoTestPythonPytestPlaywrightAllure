@@ -109,7 +109,7 @@ def auth_page(page: Page, new_user: User):
     login_page = LoginPage(page)
     login_page.open()
     login_page.login(new_user.email, new_user.password)
-    expect(page.get_by_role("link", name="Добавить новость")).to_be_visible()
+    login_page.check_button()
     return page
 
 @pytest.fixture(scope="function")
@@ -117,7 +117,7 @@ def auth_page_not_new(page: Page):
     login_page = LoginPage(page)
     login_page.open()
     login_page.login(user2.email, user2.password)
-    expect(page.get_by_role("link", name="Добавить новость")).to_be_visible()
+    login_page.check_button()
     return page
 
 @pytest.fixture
