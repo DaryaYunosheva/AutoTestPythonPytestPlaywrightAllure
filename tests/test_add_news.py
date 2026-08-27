@@ -78,7 +78,7 @@ class TestAddNews:
 
     @allure.story("Создание новости с пустым текстом")
     @allure.severity(allure.severity_level.NORMAL)
-    @allure.description("")
+    @allure.description("Проверка, что новость не создастся без основного текста")
     @pytest.mark.negative
     def test_add_news_wrong_text(self, auth_page_not_new):
         logger.info("Начало теста: Создание новости с пустым текстом")
