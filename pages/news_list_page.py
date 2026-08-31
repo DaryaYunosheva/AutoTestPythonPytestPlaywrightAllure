@@ -12,7 +12,7 @@ class NewsListPage(BasePage):
         search_input = self.page.get_by_placeholder("Поиск...")
         search_input.fill(query)
         search_input.press("Enter")
-        self.page.wait_for_timeout(5000)
+        expect(self.page.locator(".card").filter(has_text=query).first).to_be_visible()
         return self
 
     def click_news(self, title: str):
