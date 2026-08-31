@@ -25,17 +25,31 @@ class NewsListPage(BasePage):
 
     def click_page(self, page_number: int):
         self.page.get_by_role("button", name=str(page_number), exact=True).click()
-        self.page.wait_for_timeout(5000)
+        expect(self.page.locator("button.join-item.btn.btn-primary")).to_have_text(str(page_number))
         return self
 
     def click_next(self):
-        self.page.get_by_role("button", name="»").click()
-        self.page.wait_for_timeout(5000)
+        current_page = self.get_current_page()
+        old_titles = self.get_card_titles()
+
+        button = self.page.get_by_role("button", name="»")
+        expect(button).to_be_enabled()
+        button.click()
+
+        expect(self.page.locator("button.join-item.btn.btn-primary")).not_to_have_text(str(current_page))
+        expect(self.page.locator(".card h2 a")).not_to_have_text(old_titles)
         return self
 
     def click_previous(self):
-        self.page.get_by_role("button", name="«").click()
-        self.page.wait_for_timeout(5000)
+        current_page = self.get_current_page()
+        old_titles = self.get_card_titles()
+
+        button = self.page.get_by_role("button", name="«")
+        expect(button).to_be_enabled()
+        button.click()
+
+        expect(self.page.locator("button.join-item.btn.btn-primary")).not_to_have_text(str(current_page))
+        expect(self.page.locator(".card h2 a")).not_to_have_text(old_titles)
         return self
 
     def get_card_titles(self):
