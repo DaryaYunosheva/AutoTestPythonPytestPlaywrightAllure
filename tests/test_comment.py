@@ -5,6 +5,7 @@ from pages.add_news_page import AddNewsPage
 from pages.news_details_page import NewsDetailPage
 from helpers.data_generator import generate_comment, generate_news
 from playwright.sync_api import expect, Page
+import random
 
 from pages.news_list_page import NewsListPage
 
@@ -49,7 +50,8 @@ class TestDetailsNews:
         logger.info("Начало теста: Проверка комментирования у неавторизованного пользователя")
         news_detail_page = NewsDetailPage(page)
         with allure.step("Открытие новости"):
-            news_detail_page.navigate("/news/240")
+            number = random.randint(1, 100)
+            news_detail_page.navigate(f"/news/{number}")
         with allure.step("Проверка отсутствия кнопки для отправки комментария"):
             expect(news_detail_page.get_button()).not_to_be_visible()
         logger.info("Тест завершен успешно")
